@@ -138,7 +138,7 @@ color: #ec407a;
     margin-right: 20px;
     margin-left:100px;
     top: 100px;
-    width: 90%;
+    width: auto;
     height: 100%;
 
     transition: 0.5s;
@@ -147,7 +147,7 @@ color: #ec407a;
     margin-left: 270px;   
     position: relative; 
     top: 100px;
-    width: 80%;
+    width: auto;
     height: 100%;
     margin-right: 20px;
 
@@ -156,7 +156,7 @@ color: #ec407a;
 .grid{
     display: grid;
     grid-template-columns:2fr 2fr 0.1fr;
-    grid-template-rows: 4fr 10fr;
+    grid-template-rows: 70px auto;
     grid-template-areas: 
     "heading heading . "  
     "fill images ." 
@@ -165,7 +165,7 @@ color: #ec407a;
 #images{
     background:rgb(45, 100, 218);
     grid-area: images;
-    width: 100%;
+    width: auto;
     
 }
 #content{
