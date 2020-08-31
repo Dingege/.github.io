@@ -163,9 +163,10 @@ color: #ec407a;
     ;
 }
 #images{
-    background:rgb(45, 100, 218);
+    /* background:rgb(45, 100, 218); */
     grid-area: images;
     width: auto;
+    padding-left: 30px;
     
 }
 #content{
@@ -189,10 +190,11 @@ color: #ec407a;
 }
 .fill{
     grid-area: fill;
-width: 100%;
-background:beige;
-height: 100%;
-grid-area: fill;
+    padding-right: 30px;
+    /* background:beige; */
+    height: 100%;
+    grid-area: fill;
+    width: 100%;
 
 }
 .fill p{
