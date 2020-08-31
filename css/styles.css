@@ -10,6 +10,7 @@ header{
     padding: 20px;
     width: 100%;
     height: 30px;
+    z-index: 2;
 }
 .left-area h3{
     color: white;
@@ -124,4 +125,78 @@ color: #ec407a;
 
 #check{
     display: none;
+}
+
+/* Content  */
+
+.wrapper {
+    transition: 0.5s;
+    
+}
+#check:checked~ .wrapper{
+    position: relative; 
+    margin-right: 20px;
+    margin-left:100px;
+    top: 100px;
+    width: 90%;
+    height: 100%;
+
+    transition: 0.5s;
+}
+#check:not(:checked) ~ .wrapper {
+    margin-left: 270px;   
+    position: relative; 
+    top: 100px;
+    width: 80%;
+    height: 100%;
+    margin-right: 20px;
+
+
+}
+.grid{
+    display: grid;
+    grid-template-columns:2fr 2fr 0.1fr;
+    grid-template-rows: 4fr 10fr;
+    grid-template-areas: 
+    "heading heading . "  
+    "fill images ." 
+    ;
+}
+#images{
+    background:rgb(45, 100, 218);
+    grid-area: images;
+    width: 100%;
+    
+}
+#content{
+    grid-area: content;
+    padding: 0 10px;
+}
+.heading{
+    grid-area: heading;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Noto Sans HK', sans-serif;
+    height: 20px;
+}
+    
+    
+    
+.time p{
+    font-size:13px;  
+    margin: 0 ; 
+
+}
+.fill{
+    grid-area: fill;
+width: 100%;
+background:beige;
+height: 100%;
+grid-area: fill;
+
+}
+.fill p{
+    font-size: 20px;
+    line-height: 2.5rem;
+    text-align: left;
 }
