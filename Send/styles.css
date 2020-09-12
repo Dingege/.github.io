@@ -46,13 +46,11 @@ header{
     padding-top: 30px;
     position: fixed;
     left:0;
-    width: 260px;
+    width: 250px;
     height: 100%;
     transition:0.5s;
     transition-property: left;
     overflow-y: scroll;
-    overflow-x: hidden;
-    max-height: 850px;
 }
 
 .sidebar .profile-image{
@@ -92,17 +90,21 @@ header{
     position: absolute;
     left: 200px;
     padding-top: 20px;
-
 }
 
 .dropdown{
     display: none;
 }
-.abc{
-    width: 100%;
-
+button{
+    background-color:#2f323A ;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    width: auto%;
+    padding: 0;
+    margin: 0;
 }
-.abc:hover .dropdown{
+button:hover .dropdown{
     display:block;
 
 }
